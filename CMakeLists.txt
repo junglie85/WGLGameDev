@@ -20,7 +20,7 @@ enable_testing()
 
 find_package(OpenGL REQUIRED)
 
-add_executable(wiggly WIN32 main.cpp)
+add_executable(wiggly WIN32 new_main.cpp)
 
 target_include_directories(wiggly PUBLIC third_party/include)
 target_link_libraries(wiggly PRIVATE gdi32 user32 opengl32)

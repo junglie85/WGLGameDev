@@ -49,7 +49,7 @@ cmake_ninja_workdir = D$:\wgl\build\debug\
 
 build cmake_object_order_depends_target_wiggly: phony || CMakeFiles\wiggly.dir
 
-build CMakeFiles\wiggly.dir\main.cpp.obj: CXX_COMPILER__wiggly_Debug D$:\wgl\main.cpp || cmake_object_order_depends_target_wiggly
+build CMakeFiles\wiggly.dir\new_main.cpp.obj: CXX_COMPILER__wiggly_Debug D$:\wgl\new_main.cpp || cmake_object_order_depends_target_wiggly
   DEFINES = -DKHRONOS_STATIC
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
   INCLUDES = -ID:\wgl\third_party\include
@@ -66,7 +66,7 @@ build CMakeFiles\wiggly.dir\main.cpp.obj: CXX_COMPILER__wiggly_Debug D$:\wgl\mai
 #############################################
 # Link the executable bin\wiggly.exe
 
-build bin\wiggly.exe: CXX_EXECUTABLE_LINKER__wiggly_Debug CMakeFiles\wiggly.dir\main.cpp.obj
+build bin\wiggly.exe: CXX_EXECUTABLE_LINKER__wiggly_Debug CMakeFiles\wiggly.dir\new_main.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:windows
   LINK_LIBRARIES = gdi32.lib  user32.lib  opengl32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

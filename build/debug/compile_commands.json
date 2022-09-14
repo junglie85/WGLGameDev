@@ -1,7 +1,7 @@
 [
 {
   "directory": "D:/wgl/build/debug",
-  "command": "C:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1432~1.313\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DKHRONOS_STATIC -ID:\\wgl\\third_party\\include /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17 /FoCMakeFiles\\wiggly.dir\\main.cpp.obj /FdTARGET_COMPILE_PDB /FS -c D:\\wgl\\main.cpp",
-  "file": "D:\\wgl\\main.cpp"
+  "command": "C:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1432~1.313\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DKHRONOS_STATIC -ID:\\wgl\\third_party\\include /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17 /FoCMakeFiles\\wiggly.dir\\new_main.cpp.obj /FdTARGET_COMPILE_PDB /FS -c D:\\wgl\\new_main.cpp",
+  "file": "D:\\wgl\\new_main.cpp"
 }
 ]
