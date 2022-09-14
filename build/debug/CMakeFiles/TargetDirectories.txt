@@ -1,0 +1,6 @@
+D:/wgl/build/debug/CMakeFiles/wiggly.dir
+D:/wgl/build/debug/CMakeFiles/package.dir
+D:/wgl/build/debug/CMakeFiles/package_source.dir
+D:/wgl/build/debug/CMakeFiles/test.dir
+D:/wgl/build/debug/CMakeFiles/edit_cache.dir
+D:/wgl/build/debug/CMakeFiles/rebuild_cache.dir

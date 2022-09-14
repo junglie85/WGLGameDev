@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "clang-tidy.buildPath": "D:\\wgl\\build\\debug"
+}
