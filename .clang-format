@@ -1,0 +1,7 @@
+---
+BasedOnStyle: webkit
+ColumnLimit: 120
+AllowShortBlocksOnASingleLine: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+AllowShortIfStatementsOnASingleLine: true
+AlignConsecutiveAssignments: true
