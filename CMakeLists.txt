@@ -28,6 +28,18 @@ if(WIN32)
     target_compile_definitions(win32_hello_triangle PUBLIC KHRONOS_STATIC)
 endif()
 
+if(APPLE)
+    find_library(OPEN_GL OpenGL)
+    find_library(APP_KIT AppKit)
+    find_library(GL_KIT GLKit)
+    list(APPEND LIBS ${OPEN_GL} ${APP_KIT} ${GL_KIT})
+
+    add_executable(macos_hello_triangle macos/macos_application.h macos/macos_application.mm macos/application.h macos/application.cpp)
+
+    target_link_libraries(mmacos_hello_triangleac PRIVATE ${LIBS})
+    target_compile_definitions(macos_hello_triangle PRIVATE GL_SILENCE_DEPRECATION)
+endif()
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
