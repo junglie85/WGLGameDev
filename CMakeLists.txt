@@ -20,11 +20,23 @@ enable_testing()
 
 find_package(OpenGL REQUIRED)
 
-add_executable(wiggly WIN32 new_main.cpp)
+# add_executable(wiggly WIN32 new_main.cpp)
 
-target_include_directories(wiggly PUBLIC third_party/include)
-target_link_libraries(wiggly PRIVATE gdi32 user32 opengl32)
-target_compile_definitions(wiggly PUBLIC KHRONOS_STATIC)
+# target_include_directories(wiggly PUBLIC third_party/include)
+# target_link_libraries(wiggly PRIVATE gdi32 user32 opengl32)
+# target_compile_definitions(wiggly PUBLIC KHRONOS_STATIC)
+
+#
+if(APPLE)
+    # find_library(CARBON_LIBRARY Carbon)
+    find_library(OPEN_GL OpenGL)
+    find_library(APP_KIT AppKit)
+    find_library(GL_KIT GLKit)
+    list(APPEND LIBS ${OPEN_GL} ${APP_KIT} ${GL_KIT})
+    add_executable(mac MacApp.h MacApp.mm App.h App.cpp)
+    target_link_libraries(mac PRIVATE ${LIBS})
+    target_compile_definitions(mac PRIVATE GL_SILENCE_DEPRECATION)
+endif()
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
