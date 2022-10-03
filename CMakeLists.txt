@@ -26,6 +26,12 @@ if(WIN32)
     target_include_directories(win32_hello_triangle PRIVATE third_party/include)
     target_link_libraries(win32_hello_triangle PRIVATE gdi32 user32 opengl32)
     target_compile_definitions(win32_hello_triangle PUBLIC KHRONOS_STATIC)
+
+    add_executable(logl WIN32 learnopengl.c)
+
+    target_include_directories(logl PRIVATE third_party/include)
+    target_link_libraries(logl PRIVATE gdi32 user32 opengl32)
+    target_compile_definitions(logl PUBLIC KHRONOS_STATIC)
 endif()
 
 if(APPLE)

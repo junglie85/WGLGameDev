@@ -1,4 +1,7 @@
 {
     "cmake.sourceDirectory": "${workspaceFolder}",
-    "clang-tidy.buildPath": "D:\\wgl\\build\\debug"
+    "clang-tidy.buildPath": "D:\\wgl\\build\\debug",
+    "files.associations": {
+        "stb_image.h": "c"
+    }
 }
